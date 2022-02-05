@@ -1,0 +1,16 @@
+//המרה מבסיס עשרוני לבינארי
+  void main() {
+    int a, c = 1, sum = 0;
+    printf("Enter a decimal number:");
+    scanf("%d", & a);
+    while (a != 0) {
+      if (a % 2 == 1)
+        sum += c;
+
+      a /= 2;
+
+      c *= 10;
+
+    }
+    printf("The binary value=%d", sum);
+  }
